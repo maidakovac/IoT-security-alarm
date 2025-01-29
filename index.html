@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>safe&sound</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="w3-light-grey">
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">Safe&Sound</span>
+</div>
+<div class="w3-main" style="margin-top:43px;margin-left:30px;"> 
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"> </i> SENSOR DASHBOARD</b></h5>
+  </header>
+  <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="height:460px">
+      <h3 id="sensorValue">Motion sensor value: Loading...</h3><br>      
+      <canvas id="gaugeChart" style="width:250px"></canvas>   
+      <p id="securityLevel">Security Level: Loading...</p>
+      </div>
+    </div>
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="height:460px">
+        <h3 id="alarmStatus">Alarm status: Loading...</h3><br>           
+        <img id="alarmImage" src="alert.png" alt="Alarm Image" style="width:200px; height:auto; margin-top:20px;"><br><br>
+        <button id="stopAlarmBtn" style="display: none;">TURN OFF</button>
+      </div>
+    </div>
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="height:460px">
+        <h3 id="activityStatus">Active</h3><br>
+        <img id="activityImage" src="active.png" alt="Alarm Control" style="width:200px; height:auto; margin-top:20px; cursor: pointer;"><br><br>
+        <button id="activityAlarmBtn">Deactivate</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

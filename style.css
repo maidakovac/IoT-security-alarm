@@ -1,0 +1,34 @@
+html, body, h1, h2, h3, h4, h5 {
+  font-family: "Raleway", sans-serif;
+}
+
+#stopAlarmBtn {
+  padding: 10px 20px;
+  background-color: #b80000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#stopAlarmBtn:hover {
+  background-color: #000000;
+}
+
+#activityAlarmBtn {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#activityAlarmBtn:hover {
+  background-color: #656565;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}
